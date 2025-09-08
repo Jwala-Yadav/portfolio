@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jwala Mahendra Yadav | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .section {
+            min-height: 100vh;
+            padding: 80px 0;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            backdrop-filter: blur(8px);
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold gradient-text">Jwala Yadav</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#education" class="text-gray-700 hover:text-blue-600 transition">Education</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-600 transition">Experience</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                <a href="#education" class="text-gray-700 hover:text-blue-600 transition">Education</a>
+                <a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a>
+                <a href="#experience" class="text-gray-700 hover:text-blue-600 transition">Experience</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section flex items-center justify-center bg-gradient-to-br from-blue-50/95 to-purple-50/95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">Hi, I'm <span class="gradient-text">Jwala Mahendra Yadav</span></h1>
+                    <h2 class="text-xl md:text-2xl text-gray-600 mb-8">Computer Engineer | Cloud Specialist | Web Developer</h2>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">Get In Touch</a>
+                        <a href="#about" class="px-6 py-3 border border-blue-500 text-blue-600 rounded-lg hover:bg-blue-50 transition duration-300">Learn More</a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <img src="Jwala.JPG" alt="Jwala Mahendra Yadav" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up" class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <p class="text-lg text-gray-600 mb-8">
+                        I recently graduated with a Bachelor of Engineering in Computer Engineering (2024). Passionate about technology and committed to innovation. I thrive on learning new technologies and applying them to solve real-world problems.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i data-feather="check-circle" class="text-green-500 mr-3 mt-1"></i>
+                            <span class="text-gray-700">Learning new things & solving problems</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="check-circle" class="text-green-500 mr-3 mt-1"></i>
+                            <span class="text-gray-700">Innovating new ideas & exploring</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="check-circle" class="text-green-500 mr-3 mt-1"></i>
+                            <span class="text-gray-700">Better learning techniques</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="check-circle" class="text-green-500 mr-3 mt-1"></i>
+                            <span class="text-gray-700">Ease of Access to Information</span>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">My Interests</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center p-3 bg-white rounded-lg shadow-sm">
+                            <i data-feather="cloud" class="text-blue-500 mr-3"></i>
+                            <span>Cloud Computing</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-white rounded-lg shadow-sm">
+                            <i data-feather="code" class="text-purple-500 mr-3"></i>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-white rounded-lg shadow-sm">
+                            <i data-feather="cpu" class="text-green-500 mr-3"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-white rounded-lg shadow-sm">
+                            <i data-feather="shield" class="text-red-500 mr-3"></i>
+                            <span>Cyber Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up" class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Education</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="space-y-8">
+                <div data-aos="fade-up" class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Universal College of Engineering</h3>
+                            <p class="text-gray-600">BE in Computer Engineering</p>
+                        </div>
+                        <div class="mt-2 md:mt-0">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">CGPA: 8.26</span>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">SKC School, Junior & Degree College</h3>
+                            <p class="text-gray-600">HSC</p>
+                        </div>
+                        <div class="mt-2 md:mt-0">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">84.77%</span>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Vidya Varidhi Vidyalaya High School</h3>
+                            <p class="text-gray-600">SSC</p>
+                        </div>
+                        <div class="mt-2 md:mt-0">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">64.80%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up" class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Skills</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cloud & DevOps -->
+                <div data-aos="fade-up" class="skill-card bg-gray-50 p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-blue-100 rounded-lg mr-4">
+                            <i data-feather="cloud" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Cloud & DevOps</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">AWS</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">GCP</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Docker</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Kubernetes</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Jenkins</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Ansible</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Git</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Maven</span>
+                    </div>
+                </div>
+                
+                <!-- Databases -->
+                <div data-aos="fade-up" data-aos-delay="100" class="skill-card bg-gray-50 p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-purple-100 rounded-lg mr-4">
+                            <i data-feather="database" class="text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Databases</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">SQL</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">T-SQL</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">Joins</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">Grouping</span>
+                    </div>
+                </div>
+                
+                <!-- Web Development -->
+                <div data-aos="fade-up" data-aos-delay="200" class="skill-card bg-gray-50 p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-green-100 rounded-lg mr-4">
+                            <i data-feather="globe" class="text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Web Development</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">Frontend</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">Backend</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">HTML/CSS</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">JavaScript</span>
+                    </div>
+                </div>
+                
+                <!-- Other Skills -->
+                <div data-aos="fade-up" class="skill-card bg-gray-50 p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-red-100 rounded-lg mr-4">
+                            <i data-feather="cpu" class="text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Machine Learning</h3>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="100" class="skill-card bg-gray-50 p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-yellow-100 rounded-lg mr-4">
+                            <i data-feather="wifi" class="text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">IoT</h3>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="200" class="skill-card bg-gray-50 p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 bg-indigo-100 rounded-lg mr-4">
+                            <i data-feather="shield" class="text-indigo-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Cyber Security</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up" class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Projects</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div data-aos="fade-right" class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="mb-4">
+                        <img src="http://static.photos/estate/640x360/1" alt="Real Estate Analytics" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Real Estate Analytics & Price Predictor</h3>
+                    <p class="text-gray-600 mb-4">A machine learning project for homebuyers & real estate insights.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Machine Learning</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">Data Analysis</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">Python</span>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div data-aos="fade-left" class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="mb-4">
+                        <img src="http://static.photos/education/640x360/2" alt="Attendance System" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Attendance & Automation System</h3>
+                    <p class="text-gray-600 mb-4">Custom Attendance App improving school efficiency with automated workflows & centralized SQL database.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Web Development</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">SQL</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up" class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Experience</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div data-aos="fade-up" class="bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Technical Head</h3>
+                            <p class="text-gray-600">SKC School & Jr. College</p>
+                        </div>
+                        <div class="mt-2 md:mt-0">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">4+ years</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Technical Core Member</h3>
+                            <p class="text-gray-600">CESA 2022</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience 3 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Technical Sub-Head</h3>
+                            <p class="text-gray-600">VYRO 2022, NSS 2021–23</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience 4 -->
+                <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Intern</h3>
+                            <p class="text-gray-600">NatSoft Solutions and Nuevera Infotech</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-gradient-to-br from-blue-50/95 to-purple-50/95">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-aos="fade-up" class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+            <!-- Contact Info -->
+            <div data-aos="fade-right">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Contact Information</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <i data-feather="mail" class="text-blue-500 mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="font-medium text-gray-700">Email</h4>
+                            <a href="mailto:jwala.y@yahoo.com" class="text-gray-600 hover:text-blue-600 transition">jwala.y@yahoo.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-feather="linkedin" class="text-blue-500 mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="font-medium text-gray-700">LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/jwala-yadav-ind/" target="_blank" class="text-gray-600 hover:text-blue-600 transition">linkedin.com/in/jwala-yadav-ind</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-feather="instagram" class="text-pink-500 mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="font-medium text-gray-700">Instagram</h4>
+                            <a href="https://www.instagram.com/jwala.yadav" target="_blank" class="text-gray-600 hover:text-blue-600 transition">instagram.com/jwala.yadav</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-feather="facebook" class="text-blue-700 mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="font-medium text-gray-700">Facebook</h4>
+                            <a href="https://www.facebook.com/JwalaYadav.IND" target="_blank" class="text-gray-600 hover:text-blue-600 transition">facebook.com/JwalaYadav.IND</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-feather="twitter" class="text-blue-400 mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="font-medium text-gray-700"> X </h4>
+                            <a href="https://x.com/JwalaYadav_IND" target="_blank" class="text-gray-600 hover:text-blue-600 transition">x.com/JwalaYadav_IND</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div data-aos="fade-left">
+                <form class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="text-xl font-bold">Jwala Mahendra Yadav</span>
+                <p class="text-gray-400 mt-1">Computer Engineer | Cloud Specialist | Web Developer</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="mailto:jwala.y@yahoo.com" class="text-gray-400 hover:text-white transition" target="_blank">
+                    <i data-feather="mail"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jwala-yadav-ind/" target="_blank" class="text-gray-400 hover:text-white transition">
+                    <i data-feather="linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/jwala.yadav" target="_blank" class="text-gray-400 hover:text-white transition">
+                    <i data-feather="instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/JwalaYadav.IND" target="_blank" class="text-gray-400 hover:text-white transition">
+                    <i data-feather="facebook"></i>
+                </a>
+                <a href="https://x.com/JwalaYadav_IND" target="_blank" class="text-gray-400 hover:text-white transition">
+                    <i data-feather="twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+            <p>&copy; 2025 Jwala Mahendra Yadav. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+        
+        feather.replace();
+    </script>
+</body>
+</html>
