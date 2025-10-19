@@ -26,7 +26,7 @@ This portfolio showcases my work as a Computer Engineer and Cloud Specialist. It
 
 ## 🔗 Live Demo
 
-- Live site: (https://jwalayadav-portfolio.netlify.app/)
+- Live site: [Click Here](https://jwalayadav-portfolio.netlify.app)
 
 ## 📸 Screenshots
 
@@ -61,5 +61,5 @@ Add screenshots to the assets/images folder and reference them here:
 ## 📫 Contact
 
 - Email: jwala.y@yahoo.com
-- LinkedIn: (https://www.linkedin.com/in/jwala-yadav-ind)
-- GitHub: (https://github.com/Jwala-Yadav)
+- LinkedIn: https://www.linkedin.com/in/jwala-yadav-ind
+- GitHub: https://github.com/Jwala-Yadav
